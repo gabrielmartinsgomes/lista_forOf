@@ -9,8 +9,17 @@
 
 
     //PROCESSAMENTO
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+    let pares = []
+    for(let item of listaDeNumeros) {
+        if(item%2 == 0) {
+            pares.push(item)
+
+        }
+    }
 
 
     //SAÍDA
+    alert(`Pares: ${pares.sort((a, b) => a - b)}`)
 
 </script>
