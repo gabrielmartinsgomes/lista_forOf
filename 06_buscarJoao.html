@@ -12,7 +12,7 @@
     let joao = [];
     let nomes = [];
     for (joao of listaDeNomes) {
-        if (joao.substr(0, 4) == "João" && joao.substr(0, 2) == "Joao") {
+        if (joao.includes("João")   || joao.includes("Joao")) {
             nomes.push(joao)
         }
     }

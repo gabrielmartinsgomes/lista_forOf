@@ -6,11 +6,20 @@
     //Identifique APENAS os números INTEIROS e POSITIVOS. Adicione-os em uma lista e apresente ao fim do programa, indicando também quantos números foram localizados.
 
     //ENTRADA
+    let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
 
 
     //PROCESSAMENTO
+    let num = [];
+    for(let intPosi of listaDeNumeros){
+        if (intPosi >0) {
+            num.push(intPosi)
+        }
+    }
 
 
     //SAÍDA
+    alert(`${num.sort((a, b) => a - b).join(" - ").replace(".", ",")}`);
+    alert(`Foram localizados ${num.length} números.`)
 
 </script>
